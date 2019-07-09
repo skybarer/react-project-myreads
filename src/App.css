@@ -14,14 +14,14 @@ body, .app {
 
 .list-books-title {
   padding: 10px 0;
-  background: #2e7c31;
+  background: #ffcc6c;
   text-align: center;
 }
 
 .list-books-title h1 {
   font-weight: 400;
   margin: 0;
-  color: white;
+  color: black;
 }
 
 .list-books-content {
@@ -54,11 +54,12 @@ body, .app {
 }
 
 .open-search button {
+  color: black;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: wheat;
   background-image: url('./icons/add.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -66,10 +67,11 @@ body, .app {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   font-size: 0;
   outline: 0;
+  border: 0;
 }
 
 .open-search button:hover {
-  background-color: rgb(0, 102, 0);
+  background-color: wheat;
 }
 
 
@@ -162,19 +164,37 @@ button:active {
   align-items: flex-end;
 }
 
+/* .book-shelf-changer {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: wheat;
+    background-image: url(./icons/three-dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} */
+
 .book-shelf-changer {
-  position: absolute;
-  right: 0;
-  bottom: -10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #60ac5d;
-  background-image: url('./icons/arrow-drop-down.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /* color: black; */
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    right: 12px;
+    width: 25px;
+    height: 25px;
+    /* border-radius: 50%; */
+    background: wheat;
+    border: 1px solid wheat;
+    background-image: url(./icons/three-dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .book-shelf-changer select {
