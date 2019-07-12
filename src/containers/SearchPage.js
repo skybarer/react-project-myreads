@@ -18,11 +18,17 @@ class SearchPage extends React.Component {
         this.setState({ query });
 
         // if user input => run the search
-        if (query) {
+       
+         if (query) {
             BooksAPI.search(query.trim(), 20).then(books => {
-                books.length > 0
-                    ? this.setState({ newBooks: books, searchErr: false })
-                    : this.setState({ newBooks: [], searchErr: true });
+                if (query === this.state.query) {
+                    this.setState({ newBooks: books, searchErr: false });
+                }else {
+                    books.length > 0
+                        ? this.setState({ newBooks: books, searchErr: false })
+                        : this.setState({ newBooks: [], searchErr: true });
+                }
+               
             });
 
             // if query is empty => reset state to default
